@@ -60,7 +60,7 @@ o.smartindent = true
 o.spellsuggest = "best,10"
 o.tabstop = 4
 g.splitright = false
-g.splitblow = false
+g.splitbelow = true
 
 o.termguicolors = true
 o.textwidth = 100

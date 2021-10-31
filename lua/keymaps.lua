@@ -28,9 +28,6 @@ local newKeymap = require'utils'.newKeymap
 --end
 
 
-
-
-
 newKeymap('i', '<c-s>', '<ESC>:w<CR>a', {})
 newKeymap('n', '<c-s>', ':w<CR>', {})
 

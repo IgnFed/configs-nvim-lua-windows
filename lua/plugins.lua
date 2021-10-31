@@ -56,6 +56,7 @@ require'plugins/lspsagaconfig'
 require'plugins/cmpconfig'
 require'plugins/lualineconfig'
 require'plugins/telescopeconfig'
+require'plugins/nerdtreeconfig'
 --require'plugins/ddc'
 --require'plugins/lualineconfig'
 
