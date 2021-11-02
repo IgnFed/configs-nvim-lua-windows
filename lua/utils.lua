@@ -12,6 +12,10 @@ function execute()
 
     autocmd FileType javascript nnoremap <buffer> <F5> :sp<CR> :term node % <CR> :startinsert<CR>
 
+    autocmd FileType typescript nnoremap <buffer> <F5> :sp<CR> :term tsc % <CR> :startinsert<CR>
+
+    autocmd FileType typescript nnoremap <buffer> <C-F5> :sp<CR> :term tsc --watch<CR> :startinsert<CR>
+
   augroup END
   ]])
 

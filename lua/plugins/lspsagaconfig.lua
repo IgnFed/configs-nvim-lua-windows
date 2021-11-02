@@ -24,11 +24,13 @@ saga.init_lsp_saga {
 
 vim.cmd([[
 
-  nnoremap <silent> <C-j> <Cmd>Lspsaga diagnostic_jump_next<CR>
   nnoremap <silent> gh <cmd> lua require('lspsaga.provider').lsp_finder()<CR>
 
-  inoremap <silent> <C-l> <Cmd>Lspsaga signature_help<CR>
-  nnoremap <silent>K <Cmd>Lspsaga hover_doc<CR>
+  inoremap <silent> cx <Cmd>Lspsaga signature_help<CR>
+  nnoremap <silent> hv <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
+  nnoremap <silent><F2> <cmd>lua require('lspsaga.rename').rename()<CR>
+  inoremap <silent><F2> <cmd>lua require('lspsaga.rename').rename()<CR>
+nnoremap <silent> gd <cmd>lua require'lspsaga.provider'.preview_definition()<CR>
 ]])
 
 
